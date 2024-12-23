@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Future</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            color: #333;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1e3a8a;
+        }
+        header .menu {
+            display: flex;
+            gap: 15px;
+        }
+        header .menu a {
+            text-decoration: none;
+            color: #1e3a8a;
+            font-weight: bold;
+        }
+        header .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 24px;
+        }
+
+        .hero {
+            padding: 0;
+            background-color: transparent;
+            position: relative;
+            text-align: center;
+        }
+
+        .banner-container {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+
+        .banner-container img {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+        }
+
+        .banner-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #ffffff;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 90%; /* Ограничиваем ширину текста на мобильных */
+            box-sizing: border-box; /* Учитываем отступы и padding */
+            word-wrap: break-word; /* Переносим слова при переполнении */
+            width: 100%;
+        }
+
+        .banner-content h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .banner-content p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+          .banner-content h1 {
+                font-size: 28px; /* Уменьшаем размер текста */
+                line-height: 1.2;
+          }
+
+        .banner-content p {
+        font-size: 16px; /* Уменьшаем размер описания */
+        line-height: 1.4;
+          }
+        }
+
+        @media (max-width: 480px) {
+            .banner-content h1 {
+                  font-size: 24px; /* Еще меньше для маленьких экранов */
+              }
+
+            .banner-content p {
+                font-size: 14px; /* Сжимаем описание */
+              }
+        }
+
+
+
+        .banner-content button {
+            background-color: #10b981;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .banner-content button:hover {
+            background-color: #0d9467;
+        }
+
+        .subjects {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 20px;
+            background-color: #ffffff;
+            flex-wrap: wrap;
+        }
+
+        .subject {
+            text-align: center;
+            padding: 20px;
+            background-color: #f9fafb;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            margin: 10px;
+        }
+
+        .subject img {
+            width: 200px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .subject h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .subject p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .subject button {
+            background-color: #10b981;
+            color: #ffffff;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .contact-form {
+            display: none;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #10b981;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #1e3a8a;
+            padding: 20px;
+            color: #ffffff;
+            text-align: center;
+            border-top: 3px solid #10b981;
+        }
+
+        @media (max-width: 768px) {
+            header .menu {
+                display: none;
+            }
+
+            header .hamburger {
+                display: block;
+            }
+
+            .hamburger-menu {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                position: absolute;
+                top: 50px;
+                left: 20px;
+                background-color: #ffffff;
+                padding: 10px;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            .hamburger-menu a {
+                text-decoration: none;
+                color: #1e3a8a;
+                font-weight: bold;
+                font-size: 18px;
+                padding: 10px;
+            }
+
+            .hamburger-menu a:hover {
+                background-color: #f3f4f6;
+                border-radius: 5px;
+            }
+
+            .subjects {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .subject {
+                width: 80%;
+            }
+
+            .banner-content h1 {
+                font-size: 28px;
+            }
+
+            .banner-content p {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header .logo {
+                font-size: 20px;
+            }
+
+            .banner-content {
+                padding: 15px;
+            }
+
+            .banner-content h1 {
+                font-size: 24px;
+            }
+
+            .banner-content p {
+                font-size: 14px;
+            }
+
+            .subject img {
+                width: 150px;
+            }
+
+            .subject h3 {
+                font-size: 18px;
+            }
+
+            .subject p {
+                font-size: 12px;
+            }
+
+            .subject button {
+                font-size: 12px;
+                padding: 6px 10px;
+            }
+
+            .contact-form button {
+                font-size: 14px;
+                padding: 8px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">IT Future</div>
+        <div class="menu">
+            <a href="#python">Python</a>
+            <a href="#roblox">Roblox</a>
+            <a href="#scratch">Scratch</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div class="hamburger-menu" id="hamburger-menu" style="display: none;">
+            <a href="#python">Python</a>
+            <a href="#roblox">Roblox</a>
+            <a href="#scratch">Scratch</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="banner-container">
+            <img src="pic/banner.jpg" alt="IT Future Banner">
+            <div class="banner-content">
+                <h1>Овладейте IT-навыками</h1>
+                <p>Изучайте Python, Roblox и Scratch с экспертами.</p>
+                <button onclick="showContactForm()">Начать обучение</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="subjects">
+        <div class="subject" id="python">
+            <img src="pic/P.png" alt="Python Logo">
+            <h3>Python</h3>
+            <p>универсальный и популярный язык программирования. На курсе вы научитесь создавать современные веб-приложения, онлайн-магазины и сложные Telegram боты.
+             <b> Освойте основы программирования с помощью Python. </b>
+           </p>
+            <button onclick="showContactForm()">Записаться</button>
+        </div>
+        <div class="subject" id="roblox">
+            <img src="pic/R.png" alt="Roblox Logo">
+            <h3>Roblox</h3>
+            <p> это мощный инструмент для обучения программированию и развития творческих навыков. Вот ключевые моменты: Позволяет детям создавать собственные игры и учиться программировать Развивает навыки решения задач и работы в команде
+             <b> Научитесь создавать собственные игры в Roblox Studio. </b> 
+           </p>
+            <button onclick="showContactForm()">Записаться</button>
+        </div>
+        <div class="subject" id="scratch">
+            <img src="pic/S.jpg" alt="Scratch Logo">
+            <h3>Scratch</h3>
+            <p> С помощью программы Scratch дети играючи изучают основы программирования. Учатся делить сложную задачу на более мелкие составляющие и пошагово их решать. Таким образом, дети усваивают немаловажные математические концепции. Такие как: случайные числа, координаты, меняющиеся переменные.
+             <b> Начните программировать с помощью визуального интерфейса Scratch. </b>
+            </p>
+            <button onclick="showContactForm()">Записаться</button>
+        </div>
+    </section>
+
+    <div class="contact-form" id="contact-form">
+        <h2>Контактная форма</h2>
+        <form action="https://formspree.io/f/mnnqewqo" method="POST">
+            <label>
+                Введите свою электронную почту:
+                <input type="email" name="email" required>
+            </label>
+            <label>
+                Введите имя и номер телефона:
+                <textarea name="message" required></textarea>
+            </label>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 IT Future. Все права защищены.</p>
+    </footer>
+
+    <script>
+        function showContactForm() {
+            const form = document.getElementById("contact-form");
+            form.style.display = "block";
+            form.scrollIntoView({ behavior: "smooth" });
+        }
+
+        function toggleMenu() {
+            const menu = document.getElementById("hamburger-menu");
+            if (menu.style.display === "none" || menu.style.display === "") {
+                menu.style.display = "flex";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
