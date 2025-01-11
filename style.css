@@ -1,0 +1,393 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+header .menu {
+    display: flex;
+    gap: 15px;
+}
+
+header .menu a {
+    text-decoration: none;
+    color: #1e3a8a;
+    font-weight: bold;
+}
+
+header .hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.hero {
+    padding: 0;
+    background-color: transparent;
+    position: relative;
+    text-align: center;
+}
+
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.banner-container img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%; /* Ограничиваем ширину текста на мобильных */
+    box-sizing: border-box; /* Учитываем отступы и padding */
+    word-wrap: break-word; /* Переносим слова при переполнении */
+    width: 100%;
+}
+
+.banner-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.banner-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .banner-content h1 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .banner-content p {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-content h1 {
+        font-size: 24px; /* Еще меньше для маленьких экранов */
+    }
+
+    .banner-content p {
+        font-size: 14px;
+    }
+}
+
+.banner-content button {
+    background-color: #10b981;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.banner-content button:hover {
+    background-color: #0d9467;
+}
+
+.subjects {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+}
+
+.subject {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9fafb;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin: 10px;
+}
+
+.subject img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.subject h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.subject p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.subject button {
+    background-color: #10b981;
+    color: #ffffff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.contact-form {
+    display: none;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #10b981;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0d9467;
+}
+
+footer {
+    background-color: #1e3a8a;
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+    border-top: 3px solid #10b981;
+}
+
+@media (max-width: 768px) {
+    header .menu {
+        display: none;
+    }
+
+    header .hamburger {
+        display: block;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #ffffff;
+        padding: 20px;
+        width: 300px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        z-index: 9999;
+    }
+
+    .hamburger-menu i {
+        font-size: 28px;
+        margin-right: 10px;
+    }
+
+    .hamburger-menu a {
+        text-decoration: none;
+        color: #1e3a8a;
+        font-weight: bold;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .hamburger-menu a:hover {
+        background-color: #f3f4f6;
+        border-radius: 5px;
+    }
+
+    .subjects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subject {
+        width: 80%;
+    }
+
+    .banner-content h1 {
+        font-size: 28px;
+    }
+
+    .banner-content p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo {
+        font-size: 20px;
+    }
+
+    .banner-content {
+        padding: 15px;
+    }
+
+    .banner-content h1 {
+        font-size: 24px;
+    }
+
+    .banner-content p {
+        font-size: 14px;
+    }
+
+    .subject img {
+        width: 150px;
+    }
+
+    .subject h3 {
+        font-size: 18px;
+    }
+
+    .subject p {
+        font-size: 12px;
+    }
+
+    .subject button {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .contact-form button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+.phone-container {
+    position: relative;
+}
+
+#phone {
+    width: 250px;
+    padding-left: 40px;
+    padding-right: 10px;
+    font-size: 16px;
+}
+
+.flag {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-70%); /* Подняли флаг на 5 пикселей выше */
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-color: lightgrey;
+}
+
+
+input[type="tel"] {
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Дополнительные стили для формы */
+.contact-form input,
+.contact-form textarea {
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+    transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #10b981;
+    background-color: #fff;
+}
+
+.contact-form label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.contact-form button {
+    font-size: 18px;
+    padding: 12px 20px;
+    background-color: #10b981;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0d9467;
+}
