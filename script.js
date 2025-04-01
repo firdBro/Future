@@ -61,7 +61,7 @@ function updateFlag(value) {
         '+91': 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_India.svg/320px-Flag_of_India.svg.png', // Индия
         '+81': 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_Japan.svg/320px-Flag_of_Japan.svg.png', // Япония
         '+996': 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Flag_of_Kyrgyzstan.svg/320px-Flag_of_Kyrgyzstan.svg.png', // Киргизия
-        '+375': 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_Belarus.svg/320px-Flag_of_Belarus.svg.png', // Беларусь
+        '+375': 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Flag_of_Belarus.svg/500px-Flag_of_Belarus.svg.png', // Беларусь
         '+55': 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/320px-Flag_of_Brazil.svg.png', // Бразилия
         '+33': 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/320px-Flag_of_France.svg.png', // Франция
         '+49': 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/320px-Flag_of_Germany.svg.png', // Германия
