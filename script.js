@@ -57,9 +57,9 @@ function updateFlag(value) {
         '+7': 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/320px-Flag_of_Russia.svg.png', // Раша
         '+998': 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Uzbekistan.svg/1200px-Flag_of_Uzbekistan.svg.png?20241226145433', // Узб
         '+1': 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/320px-Flag_of_the_United_States.svg.png', // АсЭшАй
-        '+44': 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_Kingdom.svg/320px-Flag_of_the_United_Kingdom.svg.png', // Великобритания
+        '+44': 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/250px-Flag_of_the_United_Kingdom_%283-5%29.svg.png', // Великобритания
         '+91': 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_India.svg/320px-Flag_of_India.svg.png', // Индия
-        '+81': 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_Japan.svg/320px-Flag_of_Japan.svg.png', // Япония
+        '+81': 'https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/500px-Flag_of_Japan.svg.png', // Япония
         '+996': 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Flag_of_Kyrgyzstan.svg/320px-Flag_of_Kyrgyzstan.svg.png', // Киргизия
         '+375': 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Flag_of_Belarus.svg/500px-Flag_of_Belarus.svg.png', // Беларусь
         '+55': 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/320px-Flag_of_Brazil.svg.png', // Бразилия
@@ -67,8 +67,8 @@ function updateFlag(value) {
         '+49': 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/320px-Flag_of_Germany.svg.png', // Германия
         '+39': 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/320px-Flag_of_Italy.svg.png', // Италия
         '+34': 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/320px-Flag_of_Spain.svg.png', // Испания
-        '+61': 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_Australia.svg/320px-Flag_of_Australia.svg.png', // Австралия
-        '+27': 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Flag_of_South_Africa.svg/320px-Flag_of_South_Africa.svg.png', // Южная Африка
+        '+61': 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/383px-Flag_of_Australia_%28converted%29.svg.png', // Австралия
+        '+27': 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/500px-Flag_of_South_Africa.svg.png', // Южная Африка
     };
 
     if (flagUrls[countryCode]) {
