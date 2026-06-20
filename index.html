@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IT Future - курсы Frontend, Python Backend и AI с практикой, проектами и бесплатным пробным уроком.">
+    <title>IT Future - обучение IT с практикой</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header" id="top">
+        <a class="brand" href="#top" aria-label="IT Future">
+            <span class="brand__mark">IF</span>
+            <span>
+                <strong>IT Future</strong>
+                <small>IN CODE WE TRUST🫆</small>
+            </span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Главная навигация">
+            <a href="#courses">Курсы</a>
+            <a href="#why">Почему мы</a>
+            <a href="#faq">ЧаВо</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+
+        <button class="header-cta" type="button" data-trial>
+            Пробный урок
+        </button>
+
+        <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="mobile-menu" id="mobile-menu" aria-label="Мобильная навигация">
+            <a href="#courses">Курсы</a>
+            <a href="#why">Почему мы</a>
+            <a href="#faq">ЧаВо</a>
+            <a href="#contact">Контакты</a>
+            <button type="button" data-trial>Записаться на пробный урок</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero__bg" aria-hidden="true"></div>
+            <div class="hero__signal" aria-hidden="true"></div>
+            <div class="hero__inner">
+                <p class="eyebrow">IT-школа нового поколения</p>
+                <h1 id="hero-title">IT Future</h1>
+                <p class="hero__slogan">IN CODE WE TRUST🫆</p>
+                <p class="hero__text">
+                    Обучаем Frontend, Python Backend и AI через реальные проекты: сайты, боты, серверы, автоматизации и продукты, которые не стыдно показать.
+                </p>
+                <div class="hero__actions">
+                    <button class="btn btn--primary" type="button" data-trial>
+                        Записаться на бесплатный пробный урок
+                    </button>
+                    <a class="btn btn--ghost" href="#courses">Смотреть курсы</a>
+                </div>
+                <div class="hero__facts" aria-label="Коротко о школе">
+                    <a href="#courses">3 направления</a>
+                    <a href="#why">практика с первого занятия</a>
+                    <a href="#course-detail">портфолио после курса</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--intro" aria-labelledby="intro-title">
+            <div class="container intro-grid">
+                <div>
+                    <p class="section-kicker">С чего начать</p>
+                    <h2 id="intro-title">Сначала пробуем, потом выбираем траекторию.</h2>
+                </div>
+                <div class="intro-copy">
+                    <p>
+                        На пробном уроке мы определяем уровень, цель и подходящий курс. Если человек уже что-то умеет, не заставляем проходить базу заново. Если начинает с нуля, даем спокойный вход без перегруза.
+                    </p>
+                    <p>
+                        В конце обучения у ученика остается не просто “сертификат”, а готовые проекты, понимание процесса разработки и ясный следующий шаг.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="courses" aria-labelledby="courses-title">
+            <div class="container">
+                <div class="section-head">
+                    <p class="section-kicker">Направления</p>
+                    <h2 id="courses-title">Курсы, которые ведут к понятному результату.</h2>
+                    <p>
+                        Выбирай направление, открывай программу и смотри, какие навыки, проекты и возможности появятся после обучения.
+                    </p>
+                </div>
+
+                <div class="course-cards" aria-label="Список курсов">
+                    <article class="course-card is-active" id="frontend" data-course-card="frontend">
+                        <div class="course-visual course-visual--frontend">
+                            <img src="assets/course-frontend.png" alt="Иллюстрация курса Frontend с интерфейсом и цветовой системой">
+                            <span class="tech-badge tech-badge--html">HTML</span>
+                            <span class="tech-badge tech-badge--css">CSS</span>
+                            <span class="tech-badge tech-badge--js">JS</span>
+                            <span class="tech-badge tech-badge--figma">Figma</span>
+                        </div>
+                        <div class="course-card__body">
+                            <p class="course-card__label">HTML + CSS + JS + Figma</p>
+                            <h3>Frontend</h3>
+                            <p>
+                                Верстка, дизайн интерфейсов, адаптивность, JavaScript и сборка сильного портфолио.
+                            </p>
+                            <button type="button" data-open-course="frontend">Открыть программу</button>
+                        </div>
+                    </article>
+
+                    <article class="course-card" id="python" data-course-card="python">
+                        <div class="course-visual course-visual--python">
+                            <img src="assets/course-python.png" alt="Иллюстрация курса Python с серверами и ботом">
+                            <span class="tech-badge tech-badge--python">Py</span>
+                            <span class="tech-badge tech-badge--api">API</span>
+                            <span class="tech-badge tech-badge--bot">Bot</span>
+                            <span class="tech-badge tech-badge--server">Server</span>
+                        </div>
+                        <div class="course-card__body">
+                            <p class="course-card__label">Backend + серверы + Telegram-боты</p>
+                            <h3>Python</h3>
+                            <p>
+                                От основ языка до backend-разработки, API, баз данных, серверов и Telegram-ботов.
+                            </p>
+                            <button type="button" data-open-course="python">Открыть программу</button>
+                        </div>
+                    </article>
+
+                    <article class="course-card" id="ai" data-course-card="ai">
+                        <div class="course-visual course-visual--ai">
+                            <img src="assets/course-ai.png" alt="Иллюстрация курса AI с нейросетью и связями">
+                            <span class="tech-badge tech-badge--ai">AI</span>
+                            <span class="tech-badge tech-badge--gpt">GPT</span>
+                            <span class="tech-badge tech-badge--data">Data</span>
+                            <span class="tech-badge tech-badge--auto">Auto</span>
+                        </div>
+                        <div class="course-card__body">
+                            <p class="course-card__label">AI-основа + практика + pro-уровень</p>
+                            <h3>AI</h3>
+                            <p>
+                                Работа с AI-инструментами, создание ассистентов, автоматизаций и своих AI-продуктов.
+                            </p>
+                            <button type="button" data-open-course="ai">Открыть программу</button>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="course-switcher" role="tablist" aria-label="Переключатель программ курсов">
+                    <button class="is-active" type="button" role="tab" aria-selected="true" data-open-course="frontend">Frontend</button>
+                    <button type="button" role="tab" aria-selected="false" data-open-course="python">Python</button>
+                    <button type="button" role="tab" aria-selected="false" data-open-course="ai">AI</button>
+                </div>
+
+                <section class="course-detail" id="course-detail" aria-live="polite">
+                    <article class="course-panel is-active" data-course-panel="frontend" aria-labelledby="frontend-title">
+                        <div class="course-panel__media">
+                            <div class="course-visual course-visual--large course-visual--frontend">
+                                <img src="assets/course-frontend.png" alt="">
+                                <span class="tech-badge tech-badge--html">HTML</span>
+                                <span class="tech-badge tech-badge--css">CSS</span>
+                                <span class="tech-badge tech-badge--js">JS</span>
+                                <span class="tech-badge tech-badge--figma">Figma</span>
+                            </div>
+                        </div>
+                        <div class="course-panel__content">
+                            <p class="section-kicker">Курс Frontend</p>
+                            <h2 id="frontend-title">Сайты и интерфейсы, которые выглядят достойно и работают быстро.</h2>
+                            <p>
+                                Курс подходит тем, кто хочет научиться создавать современные сайты: от первого макета в Figma до интерактивной страницы на JavaScript. Мы учим не копировать блоки вслепую, а думать как разработчик интерфейсов.
+                            </p>
+                            <dl class="course-meta">
+                                <div><dt>Преподаватель</dt><dd>Иван Иванович</dd></div>
+                                <div><dt>Формат</dt><dd>практика, домашние задания, разбор проектов</dd></div>
+                                <div><dt>Итог</dt><dd>портфолио из сайтов и UI-прототипов</dd></div>
+                            </dl>
+                            <div class="program">
+                                <h3>Что внутри</h3>
+                                <ol>
+                                    <li>Figma: сетки, компоненты, типографика, подготовка макета к разработке.</li>
+                                    <li>HTML: семантика, структура страницы, формы, доступность.</li>
+                                    <li>CSS: адаптивность, Flexbox, Grid, анимации, аккуратная визуальная система.</li>
+                                    <li>JavaScript: события, DOM, формы, интерактивные элементы, работа с данными.</li>
+                                    <li>Финальный проект: продающий сайт или интерфейс сервиса под портфолио.</li>
+                                </ol>
+                            </div>
+                            <div class="course-actions">
+                                <button class="btn btn--primary" type="button" data-trial data-course="Frontend">Записаться на бесплатный пробный урок</button>
+                                <a class="btn btn--line" href="#contact">Задать вопрос</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="course-panel" data-course-panel="python" aria-labelledby="python-title">
+                        <div class="course-panel__media">
+                            <div class="course-visual course-visual--large course-visual--python">
+                                <img src="assets/course-python.png" alt="">
+                                <span class="tech-badge tech-badge--python">Py</span>
+                                <span class="tech-badge tech-badge--api">API</span>
+                                <span class="tech-badge tech-badge--bot">Bot</span>
+                                <span class="tech-badge tech-badge--server">Server</span>
+                            </div>
+                        </div>
+                        <div class="course-panel__content">
+                            <p class="section-kicker">Курс Python</p>
+                            <h2 id="python-title">Backend, серверы и Telegram-боты на языке, который нужен бизнесу.</h2>
+                            <p>
+                                Python здесь не “просто синтаксис”. Ученик проходит путь от уверенной базы до серверной логики: API, базы данных, деплой, Telegram-боты и понимание того, как живет настоящий backend.
+                            </p>
+                            <dl class="course-meta">
+                                <div><dt>Преподаватель</dt><dd>Иван Иванович</dd></div>
+                                <div><dt>Формат</dt><dd>кодинг, мини-проекты, запуск на сервере</dd></div>
+                                <div><dt>Итог</dt><dd>бот, API и backend-проект</dd></div>
+                            </dl>
+                            <div class="program">
+                                <h3>Что внутри</h3>
+                                <ol>
+                                    <li>Основы Python: переменные, условия, циклы, функции, коллекции.</li>
+                                    <li>Практика разработки: файлы, ошибки, модули, виртуальное окружение.</li>
+                                    <li>Backend: HTTP, API, базы данных, авторизация и серверная архитектура.</li>
+                                    <li>Telegram-боты: сценарии, команды, кнопки, заявки и интеграции.</li>
+                                    <li>Серверы: деплой, переменные окружения, логи, базовая безопасность.</li>
+                                </ol>
+                            </div>
+                            <div class="course-actions">
+                                <button class="btn btn--primary" type="button" data-trial data-course="Python">Записаться на бесплатный пробный урок</button>
+                                <a class="btn btn--line" href="#contact">Задать вопрос</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="course-panel" data-course-panel="ai" aria-labelledby="ai-title">
+                        <div class="course-panel__media">
+                            <div class="course-visual course-visual--large course-visual--ai">
+                                <img src="assets/course-ai.png" alt="">
+                                <span class="tech-badge tech-badge--ai">AI</span>
+                                <span class="tech-badge tech-badge--gpt">GPT</span>
+                                <span class="tech-badge tech-badge--data">Data</span>
+                                <span class="tech-badge tech-badge--auto">Auto</span>
+                            </div>
+                        </div>
+                        <div class="course-panel__content">
+                            <p class="section-kicker">Курс AI</p>
+                            <h2 id="ai-title">AI не как игрушка, а как инструмент для работы, учебы и своих продуктов.</h2>
+                            <p>
+                                Курс объясняет AI с нуля и доводит до практики: промпты, ассистенты, автоматизации, работа с данными, прототипы сервисов и понимание ограничений нейросетей.
+                            </p>
+                            <dl class="course-meta">
+                                <div><dt>Преподаватель</dt><dd>Иван Иванович</dd></div>
+                                <div><dt>Формат</dt><dd>разбор инструментов, лабораторные, проект</dd></div>
+                                <div><dt>Итог</dt><dd>AI-ассистент или автоматизация под задачу</dd></div>
+                            </dl>
+                            <div class="program">
+                                <h3>Что внутри</h3>
+                                <ol>
+                                    <li>База AI: как работают модели, где они сильны и где ошибаются.</li>
+                                    <li>Промптинг: структура запроса, роли, контекст, проверка результата.</li>
+                                    <li>AI для работы: тексты, таблицы, учеба, анализ, быстрые прототипы.</li>
+                                    <li>Создание AI-продуктов: ассистенты, боты, базы знаний, автоматизации.</li>
+                                    <li>Pro-уровень: пайплайны, оценка качества, безопасность и финальный проект.</li>
+                                </ol>
+                            </div>
+                            <div class="course-actions">
+                                <button class="btn btn--primary" type="button" data-trial data-course="AI">Записаться на бесплатный пробный урок</button>
+                                <a class="btn btn--line" href="#contact">Задать вопрос</a>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </section>
+
+        <section class="section section--ink" id="why" aria-labelledby="why-title">
+            <div class="container why-grid">
+                <div>
+                    <p class="section-kicker">Почему именно мы</p>
+                    <h2 id="why-title">Ученику важно не “прослушать курс”, а научиться делать.</h2>
+                    <p>
+                        Поэтому каждое направление строится вокруг практики, понятной обратной связи и результата, который можно показать родителям, заказчику или будущему работодателю.
+                    </p>
+                </div>
+                <div class="why-list">
+                    <div>
+                        <span>01</span>
+                        <h3>Практика вместо лекций ради лекций</h3>
+                        <p>Каждая тема заканчивается действием: сверстать, запрограммировать, запустить, улучшить.</p>
+                    </div>
+                    <div>
+                        <span>02</span>
+                        <h3>Обучение без хаоса</h3>
+                        <p>У ученика есть маршрут: база, тренировка, проект, разбор ошибок и следующий шаг.</p>
+                    </div>
+                    <div>
+                        <span>03</span>
+                        <h3>Навыки, которые остаются</h3>
+                        <p>Мы объясняем логику технологий, чтобы человек мог решать новые задачи, а не повторять за видео.</p>
+                    </div>
+                    <div>
+                        <span>04</span>
+                        <h3>Портфолио и уверенность</h3>
+                        <p>После курса остаются проекты, опыт защиты решений и понимание, куда развиваться дальше.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--steps" aria-labelledby="steps-title">
+            <div class="container">
+                <div class="section-head section-head--compact">
+                    <p class="section-kicker">Маршрут</p>
+                    <h2 id="steps-title">Как проходит старт.</h2>
+                </div>
+                <div class="steps">
+                    <div class="step">
+                        <span>1</span>
+                        <h3>Оставляешь заявку</h3>
+                        <p>Мы связываемся, уточняем цель и удобное время для пробного урока.</p>
+                    </div>
+                    <div class="step">
+                        <span>2</span>
+                        <h3>Проходишь пробный урок</h3>
+                        <p>Смотрим уровень, объясняем формат и показываем, как будет идти обучение.</p>
+                    </div>
+                    <div class="step">
+                        <span>3</span>
+                        <h3>Выбираем курс</h3>
+                        <p>Подбираем направление и темп, чтобы обучение было сильным, но не перегруженным.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="faq" aria-labelledby="faq-title">
+            <div class="container faq-grid">
+                <div class="faq-intro">
+                    <p class="section-kicker">ЧаВо</p>
+                    <h2 id="faq-title">Ответы на вопросы, которые обычно задают перед стартом.</h2>
+                    <p>
+                        Если останется что-то конкретное по возрасту, уровню или расписанию, напиши нам напрямую - ответим без долгих формальностей.
+                    </p>
+                </div>
+
+                <div class="faq-list">
+                    <article class="faq-item is-open">
+                        <button type="button" aria-expanded="true">
+                            <span>С чего начать?</span>
+                            <span class="faq-icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Начни с бесплатного пробного урока. Мы посмотрим, что уже получается, что интересно и какой курс даст лучший результат: Frontend, Python или AI.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button type="button" aria-expanded="false">
+                            <span>Подойдет ли для любого возраста?</span>
+                            <span class="faq-icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Да, если есть интерес и готовность практиковаться. Для младших учеников объясняем проще и даем больше визуальных задач, для старших быстрее переходим к реальным проектам.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button type="button" aria-expanded="false">
+                            <span>Почему именно мы?</span>
+                            <span class="faq-icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Мы не продаем “магический вход в IT”. Мы даем понятную систему: практика, обратная связь, проекты, дисциплина и честное объяснение, что нужно делать дальше.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button type="button" aria-expanded="false">
+                            <span>Какие преимущества после изучения курса?</span>
+                            <span class="faq-icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="select-label" id="benefit-course-label">Выбери направление</p>
+                            <div class="benefit-picker" role="tablist" aria-labelledby="benefit-course-label">
+                                <button class="is-active" type="button" role="tab" aria-selected="true" data-benefit-course="frontend">Frontend</button>
+                                <button type="button" role="tab" aria-selected="false" data-benefit-course="python">Python</button>
+                                <button type="button" role="tab" aria-selected="false" data-benefit-course="ai">AI</button>
+                            </div>
+                            <ul class="benefit-list" id="benefit-list"></ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact" aria-labelledby="contact-title">
+            <div class="container contact-grid">
+                <div class="contact-copy">
+                    <p class="section-kicker">Связь</p>
+                    <h2 id="contact-title">Остались еще вопросы? Вы можете связаться с нами тут.</h2>
+                    <p>
+                        Напиши, какой курс интересен, сколько лет ученику и какой результат хочется получить. Мы ответим и поможем выбрать нормальный старт.
+                    </p>
+                    <div class="contact-links" aria-label="Контактные данные">
+                        <a href="https://t.me/firdBro" target="_blank" rel="noopener">Telegram: t.me/firdBro</a>
+                        <a href="mailto:firdavshomeakk@gmail.com">firdavshomeakk@gmail.com</a>
+                    </div>
+                </div>
+
+                <form class="lead-form" id="lead-form" action="https://formspree.io/f/mnnqewqo" method="POST">
+                    <input type="hidden" name="_subject" value="Новая заявка IT Future">
+                    <div class="form-row">
+                        <label for="first-name">Имя</label>
+                        <input type="text" id="first-name" name="first-name" autocomplete="given-name" required placeholder="Введите имя">
+                    </div>
+                    <div class="form-row">
+                        <label for="last-name">Фамилия</label>
+                        <input type="text" id="last-name" name="last-name" autocomplete="family-name" required placeholder="Введите фамилию">
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Электронная почта</label>
+                        <input type="email" id="email" name="email" autocomplete="email" aria-describedby="contact-method-error" placeholder="example@mail.com">
+                    </div>
+                    <div class="form-row">
+                        <label for="phone">Телефон</label>
+                        <div class="phone-field">
+                            <span class="phone-flag" id="phone-flag">UZ</span>
+                            <input type="tel" id="phone" name="phone" autocomplete="tel" aria-describedby="contact-method-error" placeholder="+998 90 000 00 00">
+                        </div>
+                        <p class="field-hint" id="contact-method-error">Достаточно указать email или телефон - как удобнее.</p>
+                    </div>
+                    <div class="form-row">
+                        <label for="course">Интересующий курс</label>
+                        <select id="course" name="course" required>
+                            <option value="">Выберите курс</option>
+                            <option value="Frontend">Frontend</option>
+                            <option value="Python">Python</option>
+                            <option value="AI">AI</option>
+                            <option value="Не знаю, нужна консультация">Не знаю, нужна консультация</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" name="message" required placeholder="Напишите возраст, цель и удобное время для связи"></textarea>
+                    </div>
+                    <button class="btn btn--primary btn--full" type="submit">Отправить заявку</button>
+                    <p class="form-note">Заявка отправится на почту через подключенную форму.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <a class="footer-brand" href="#top">
+                    <span class="brand__mark">IF</span>
+                    <span>
+                        <strong>IT Future</strong>
+                        <small>IN CODE WE TRUST🫆</small>
+                    </span>
+                </a>
+                <p>Обучение IT-навыкам через практику, проекты и честный маршрут развития.</p>
+            </div>
+            <nav aria-label="Навигация в футере">
+                <a href="#courses">Курсы</a>
+                <a href="#why">Почему мы</a>
+                <a href="#faq">ЧаВо</a>
+                <a href="#contact">Контакты</a>
+            </nav>
+            <div class="footer-contact">
+                <a href="https://t.me/firdBro" target="_blank" rel="noopener">Telegram</a>
+                <a href="mailto:firdavshomeakk@gmail.com">Email</a>
+                <button type="button" data-trial>Пробный урок</button>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <a class="footer-slogan" href="#top">IN CODE WE TRUST🫆</a>
+            <nav class="footer-course-links" aria-label="Быстрый переход к курсам">
+                <a href="#frontend" data-footer-course="frontend">Frontend</a>
+                <a href="#python" data-footer-course="python">Python</a>
+                <a href="#ai" data-footer-course="ai">AI</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
